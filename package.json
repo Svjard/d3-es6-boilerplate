@@ -17,8 +17,9 @@
   "license": "GPL-3.0",
   "readmeFilename": "README.md",
   "scripts": {
-    "build": "gulp dist",
-    "start": "gulp"
+    "build": "./node_modules/.bin/gulp dist",
+    "start": "./node_modules/.bin/gulp",
+    "postinstall": "./node_modules/.bin/bower install"
   },
   "keywords": [
     "d3",
@@ -31,8 +32,10 @@
     "rollup"
   ],
   "devDependencies": {
-    "babel": "^6.3.26",
-    "babel-preset-es2015-rollup": "^1.1.1",
+    "babel-core": "6.7.5",
+    "babel-generator": "6.7.5",
+    "babel-preset-es2015-rollup": "^1.1.0",
+    "bower": "^1.7.9",
     "bower-files": "^3.11.3",
     "browser-sync": "^2.11.1",
     "del": "^2.2.0",

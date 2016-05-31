@@ -23,9 +23,8 @@ gulp.task('browser-sync', function() {
     server: {
       baseDir: "./build/"
     },
-    files: ['./build/**/*.*'],
-    browser: 'google chrome',
-    port: 5000,
+    browser: 'firefox',
+    port: 5000
   });
 });
 
